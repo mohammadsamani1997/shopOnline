@@ -1,0 +1,33 @@
+.pageWrapper {
+  background-color: #f8f9fa; /* Light gray background like Amazon */
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1300px; /* Limits how wide the shop gets on big screens */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #232f3e; /* Amazon dark blue/black */
+}
+
+.productGrid {
+  display: grid;
+  /* MAGIC LINE: Automatically creates columns based on screen size */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* Space between cards */
+  justify-items: center; /* Centers cards if there's extra space */
+}
+
+/* Mobile Tweak: On very small screens, make cards take full width */
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

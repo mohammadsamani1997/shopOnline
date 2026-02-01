@@ -1,0 +1,97 @@
+.card {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 220px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f1111;
+  margin: 5px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits text to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rating {
+  color: #ffa41c; /* Amazon Star Color */
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.count {
+  color: #007185;
+  margin-left: 5px;
+}
+
+.priceContainer {
+  margin: 10px 0;
+  color: #0f1111;
+}
+
+.currency {
+  font-size: 0.8rem;
+  vertical-align: super;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.addButton {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: 20px;
+  padding: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addButton:hover {
+  background-color: #f7ca00;
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px;
+  }
+
+  .imageWrapper {
+    height: 160px;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
