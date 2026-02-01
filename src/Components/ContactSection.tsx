@@ -1,7 +1,11 @@
-import React from 'react';
-import styles from '../styles/Landing.module.css';
+﻿import React from "react";
+import styles from "../styles/Landing.module.css";
 
 const ContactSection: React.FC = () => {
+  const phone = "+98 21 1234 5678";
+  const whatsapp = "+98 912 345 6789";
+  const email = "info@shopcenter.example";
+
   return (
     <section className={styles.contact}>
       <div className={styles.inner}>
@@ -9,17 +13,21 @@ const ContactSection: React.FC = () => {
 
         <div className={styles.contactGrid}>
           <div>
-            <p className={styles.contactItem}><strong>Phone:</strong> +98 XXXXXXXXXX</p>
-            <a href="https://wa.me/98XXXXXXXXXX" className={styles.ctaPrimary}>WhatsApp / Telegram</a>
+            <p className={styles.contactItem}><strong>Phone:</strong> <a href={`tel:${phone.replace(/\s+/g,"")}`}>{phone}</a></p>
+            <p className={styles.contactItem}><strong>Email:</strong> <a href={`mailto:${email}`}>{email}</a></p>
+            <p className={styles.contactItem}><strong>WhatsApp:</strong> <a href={`https://wa.me/98${whatsapp.replace(/[^\d]/g,"")}`} target="_blank" rel="noopener noreferrer">{whatsapp}</a></p>
+            <div style={{ marginTop: 12 }}>
+              <a className={styles.ctaPrimary} href="/contact">Send us a message</a>
+            </div>
           </div>
 
           <div>
             <iframe
               title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1169650179!2d72.5797427!3d33.684422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQxJzUxLjAiTiA3MsKwMzQnNDYuMCJF!5e0!3m2!1sen!2sus!4v1610000000000"
+              src="https://www.google.com/maps?q=Tehran&output=embed"
               width="100%"
-              height="200"
-              style={{ border: 0 }}
+              height="260"
+              style={{ border: 0, borderRadius: 8 }}
               loading="lazy"
             />
           </div>
