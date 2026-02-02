@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.heroInner}>
-        <h1 className={styles.business}>Welcome to ShopCenter  Quality products at great prices</h1>
+        <h1 className={styles.business}>Welcome to ShopCenter — Quality products at great prices</h1>
         <p className={styles.tagline}>Curated electronics, accessories and home essentials with reliable local support.</p>
         <div className={styles.ctas}>
           <Link to="/services" className={styles.ctaPrimary}>Our Services</Link>
