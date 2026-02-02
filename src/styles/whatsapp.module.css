@@ -1,7 +1,7 @@
-﻿.widget {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
+﻿.container { position: fixed; right: 18px; bottom: 18px; z-index: 1600; }
+
+/* main pill button */
+.widget {
   background: linear-gradient(180deg, #25D366, #1DA851);
   color: #fff;
   display: inline-flex;
@@ -10,28 +10,63 @@
   padding: 10px 14px;
   border-radius: 999px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  z-index: 1600;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
-  transition: transform 120ms ease, box-shadow 120ms ease;
-  user-select: none;
+  font-weight: 600;
 }
 
-.widget:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-}
+.widget:hover { transform: translateY(-3px); }
 
 .widget svg { flex: 0 0 auto; margin-left: 2px; }
+.label { line-height:1; }
 
-.label {
-  font-weight: 600;
-  font-size: 0.95rem;
-  line-height: 1;
-  display: inline-block;
+/* popover menu */
+.menu {
+  position: absolute;
+  right: 0;
+  bottom: 64px;
+  width: 220px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  transform: translateY(8px) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
 }
 
-/* small screens: keep compact (icon only) */
-@media (max-width: 640px) {
+.menu.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  margin-bottom: 6px;
+  transition: background 120ms ease;
+}
+
+.item:last-child { margin-bottom: 0; }
+
+.item:hover { background: rgba(255,255,255,0.04); }
+
+.sm { font-size: 0.8rem; color: #ccc; }
+
+/* compact on mobile */
+@media (max-width:640px) {
   .label { display: none; }
-  .widget { padding: 10px; right: 12px; bottom: 12px; }
+  .container { right: 12px; bottom: 12px; }
+  .menu { right: 0; bottom: 58px; width: 180px; }
 }
