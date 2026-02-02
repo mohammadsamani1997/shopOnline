@@ -1,0 +1,37 @@
+﻿.widget {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: linear-gradient(180deg, #25D366, #1DA851);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 1600;
+  text-decoration: none;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  user-select: none;
+}
+
+.widget:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.widget svg { flex: 0 0 auto; margin-left: 2px; }
+
+.label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* small screens: keep compact (icon only) */
+@media (max-width: 640px) {
+  .label { display: none; }
+  .widget { padding: 10px; right: 12px; bottom: 12px; }
+}
