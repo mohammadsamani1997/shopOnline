@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.nav} role="navigation" aria-label="Main">
-      <div className={styles.logo}>ShopCenter</div>
+      <div className={styles.logo}>Darchin</div>
 
       
 

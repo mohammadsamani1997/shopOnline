@@ -1,12 +1,12 @@
-﻿import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/whatsapp.module.css";
 
 const ContactWidget: React.FC = () => {
   const phoneDigits = "989123456789";
   const phoneDisplay = "+98 912 345 6789";
-  const whatsappHref = `https://wa.me/${phoneDigits}?text=${encodeURIComponent("Hello ShopCenter, I have a question.")}`;
-  const telegramHref = "https://t.me/ShopCenterSupport";
-  const emailHref = "mailto:info@shopcenter.example";
+  const whatsappHref = `https://wa.me/${phoneDigits}?text=${encodeURIComponent("Hello Darchin, I have a question.")}`;
+  const telegramHref = "https://t.me/DarchinSupport";
+  const emailHref = "mailto:info@Darchin.example";
   const telHref = `tel:+98${phoneDigits}`;
 
   const [open, setOpen] = useState(false);
@@ -54,7 +54,7 @@ const ContactWidget: React.FC = () => {
         </a>
         <a className={styles.item} href={emailHref} role="menuitem">
           <strong>Email</strong>
-          <span className={styles.sm}>info@shopcenter.example</span>
+          <span className={styles.sm}>info@Darchin.example</span>
         </a>
         <a className={styles.item} href={telHref} role="menuitem">
           <strong>Call</strong>

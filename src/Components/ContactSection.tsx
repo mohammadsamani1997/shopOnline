@@ -4,12 +4,12 @@ import styles from "../styles/Landing.module.css";
 const ContactSection: React.FC = () => {
   const phone = "+98 21 1234 5678";
   const whatsapp = "+98 912 345 6789";
-  const email = "info@shopcenter.example";
+  const email = "info@darchin.ir";
 
   return (
     <section className={styles.contact}>
       <div className={styles.inner}>
-        <h2 className={styles.sectionTitle}>Contact</h2>
+        <h2 className={styles.sectionTitle}>Contact Darchin</h2>
 
         <div className={styles.contactGrid}>
           <div>
@@ -24,7 +24,7 @@ const ContactSection: React.FC = () => {
           <div>
             <iframe
               title="map"
-              src="https://www.google.com/maps?q=Tehran&output=embed"
+              src="https://www.google.com/maps?q=Tehran+Iran&output=embed"
               width="100%"
               height="260"
               style={{ border: 0, borderRadius: 8 }}
