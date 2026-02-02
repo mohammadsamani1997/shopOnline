@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
-import styles from '../styles/Landing.module.css';
-import { products } from '../assets/data';
+﻿import React, { useState } from "react";
+import styles from "../styles/Landing.module.css";
 
 const Gallery: React.FC = () => {
-  const images = products.slice(0, 6).map(p => p.image);
+  const images = [
+    "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&q=80",
+    "https://images.unsplash.com/photo-1556740733-a46e955ff18c?w=500&q=80",
+    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80",
+    "https://images.unsplash.com/photo-1516534775068-bb6baef613c7?w=500&q=80",
+    "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80",
+  ];
 
-  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='40' height='30'><rect width='100%' height='100%' fill='#eee'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='#bbb' font-size='6'>Loading</text></svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30"><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#bbb" font-size="6">Loading</text></svg>`;
   const placeholder = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
 
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
@@ -17,7 +23,7 @@ const Gallery: React.FC = () => {
   const handleImgError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const img = e.currentTarget;
     if (!img.dataset.fallback) {
-      img.dataset.fallback = '1';
+      img.dataset.fallback = "1";
       img.src = placeholder;
     }
   };

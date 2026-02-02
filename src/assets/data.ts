@@ -1,5 +1,4 @@
-// types.ts (Optional: good for organization)
-export interface Product {
+﻿export interface Product {
   id: number;
   title: string;
   price: number;
@@ -12,141 +11,140 @@ export interface Product {
   };
 }
 
-// data.ts
 export const products: Product[] = [
   {
     id: 1,
-    title: "Fjallraven - Foldsack No. 1 Backpack",
-    price: 109.95,
-    description: "Perfect pack for everyday use.",
-    category: "men's clothing",
-    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-    rating: { rate: 3.9, count: 120 }
+    title: "Premium Wireless Headphones",
+    price: 89.99,
+    description: "High-quality sound with noise cancellation and 30-hour battery.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+    rating: { rate: 4.7, count: 2340 }
   },
   {
     id: 2,
-    title: "Mens Casual Premium Slim Fit T-Shirts",
-    price: 22.3,
-    description: "Slim fit, style for everyday wear.",
-    category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-    rating: { rate: 4.1, count: 259 }
+    title: "Stainless Steel Water Bottle",
+    price: 34.99,
+    description: "Keeps drinks cold for 24 hours, eco-friendly and durable.",
+    category: "Outdoors",
+    image: "https://images.unsplash.com/photo-1602143393494-1a2840a2f903?w=500&q=80",
+    rating: { rate: 4.8, count: 1820 }
   },
   {
     id: 3,
-    title: "Organic Cotton White T-Shirt",
-    price: 24.99,
-    description: "Breathable, high-quality organic cotton tee.",
-    category: "Clothing",
-    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&q=80",
-    rating: { rate: 4.2, count: 1100 }
+    title: "Mechanical Gaming Keyboard",
+    price: 129.99,
+    description: "RGB backlit with tactile blue switches for fast response.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1587829191301-dc798b83add3?w=500&q=80",
+    rating: { rate: 4.6, count: 980 }
   },
   {
     id: 4,
-    title: "Mechanical Gaming Keyboard",
-    price: 120.00,
-    description: "RGB backlit keys with blue switches for tactile feedback.",
-    category: "Electronics",
-    image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=500&q=80",
-    rating: { rate: 4.7, count: 890 }
+    title: "Premium Leather Laptop Bag",
+    price: 149.99,
+    description: "Sleek, professional design fits 15-inch laptops with style.",
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80",
+    rating: { rate: 4.9, count: 540 }
   },
   {
     id: 5,
-    title: "Ceramic Matte Coffee Mug",
-    price: 15.50,
-    description: "Dishwasher safe, 12oz ceramic mug in charcoal gray.",
-    category: "Home & Kitchen",
-    image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500&q=80",
-    rating: { rate: 4.9, count: 320 }
+    title: "4K Webcam for Streaming",
+    price: 159.99,
+    description: "Crystal clear 4K video, auto-focus, built-in mic for professionals.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80",
+    rating: { rate: 4.5, count: 620 }
   },
   {
     id: 6,
-    title: "Professional DSLR Camera",
-    price: 1450.00,
-    description: "Full-frame sensor with 4K video recording capabilities.",
-    category: "Electronics",
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80",
-    rating: { rate: 4.9, count: 120 }
+    title: "Portable Phone Stand",
+    price: 24.99,
+    description: "Adjustable aluminum stand for all devices, folds flat.",
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500&q=80",
+    rating: { rate: 4.4, count: 1240 }
   },
   {
     id: 7,
-    title: "Waterproof Hiking Boots",
-    price: 135.00,
-    description: "Durable boots designed for tough terrains.",
-    category: "Footwear",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
-    rating: { rate: 4.4, count: 650 }
+    title: "USB-C Fast Charger",
+    price: 39.99,
+    description: "65W fast charging, compatible with laptops and phones.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=80",
+    rating: { rate: 4.7, count: 2100 }
   },
   {
     id: 8,
-    title: "Stainless Steel Water Bottle",
-    price: 22.00,
-    description: "Vacuum insulated, keeps drinks cold for 24 hours.",
-    category: "Outdoors",
-    image: "https://images.unsplash.com/photo-1602143393494-1a2840a2f903?w=500&q=80",
-    rating: { rate: 4.6, count: 2100 }
+    title: "Premium Mouse Pad",
+    price: 29.99,
+    description: "Extra large non-slip surface, perfect for gaming or work.",
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
+    rating: { rate: 4.3, count: 580 }
   },
   {
     id: 9,
-    title: "Scented Soy Wax Candle",
-    price: 18.00,
-    description: "Lavender and eucalyptus scented natural soy wax.",
-    category: "Home & Kitchen",
-    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=500&q=80",
-    rating: { rate: 4.3, count: 540 }
+    title: "Wireless Phone Charger",
+    price: 44.99,
+    description: "Fast 15W charging pad with LED indicator light.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1591290621749-8a18e4787e35?w=500&q=80",
+    rating: { rate: 4.6, count: 1650 }
   },
   {
     id: 10,
-    title: "Leather Laptop Sleeve",
-    price: 45.00,
-    description: "Sleek protection for 13-inch and 15-inch laptops.",
-    category: "Accessories",
-    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&q=80",
-    rating: { rate: 4.5, count: 180 }
+    title: "Portable Bluetooth Speaker",
+    price: 59.99,
+    description: "Waterproof, 12-hour battery, crystal clear sound quality.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=80",
+    rating: { rate: 4.8, count: 2890 }
   },
   {
     id: 11,
-    title: "Portable Bluetooth Speaker",
-    price: 59.99,
-    description: "Compact design with deep bass and IPX7 waterproof rating.",
-    category: "Electronics",
-    image: "https://images.unsplash.com/photo-1608156639585-b3a032ef9689?w=500&q=80",
-    rating: { rate: 4.7, count: 1420 }
+    title: "Premium USB Cable Set",
+    price: 19.99,
+    description: "Durable braided cables in 3 lengths, fast data transfer.",
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1608149154379-111bc3268ba0?w=500&q=80",
+    rating: { rate: 4.4, count: 920 }
   },
   {
     id: 12,
-    title: "Yoga Mat with Carrying Strap",
-    price: 35.00,
-    description: "Non-slip texture for better grip during exercise.",
-    category: "Fitness",
-    image: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=500&q=80",
-    rating: { rate: 4.6, count: 770 }
+    title: "Adjustable Desk Lamp",
+    price: 69.99,
+    description: "LED lamp with touch control, USB charging port included.",
+    category: "Home",
+    image: "https://images.unsplash.com/photo-1565636192335-14f82f7ce628?w=500&q=80",
+    rating: { rate: 4.7, count: 780 }
   },
   {
     id: 13,
-    title: "Electric Drip Coffee Maker",
-    price: 89.00,
-    description: "Programmable coffee machine with thermal carafe.",
-    category: "Home & Kitchen",
-    image: "https://images.unsplash.com/photo-1520970014086-2208cf4f339b?w=500&q=80",
-    rating: { rate: 4.4, count: 910 }
+    title: "Ergonomic Keyboard",
+    price: 89.99,
+    description: "Wired keyboard with ergonomic design to reduce wrist strain.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1587829191301-dc798b83add3?w=500&q=80",
+    rating: { rate: 4.5, count: 1040 }
   },
   {
     id: 14,
-    title: "Polarized Retro Sunglasses",
-    price: 12.99,
-    description: "Classic vintage style with UV400 protection.",
-    category: "Accessories",
-    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
-    rating: { rate: 4.1, count: 3200 }
+    title: "Smart Home Hub",
+    price: 99.99,
+    description: "Control all your smart devices from one central hub.",
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80",
+    rating: { rate: 4.6, count: 650 }
   },
   {
     id: 15,
-    title: "Hard-shell Travel Suitcase",
-    price: 160.00,
-    description: "Lightweight, 360-degree spinner wheels for easy travel.",
-    category: "Travel",
-    image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=500&q=80",
-    rating: { rate: 4.8, count: 150 }
+    title: "Premium Screen Protector",
+    price: 14.99,
+    description: "Tempered glass protector for all phone sizes.",
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&q=80",
+    rating: { rate: 4.9, count: 3200 }
   }
 ];
