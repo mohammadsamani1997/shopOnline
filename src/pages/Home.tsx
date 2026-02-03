@@ -6,7 +6,7 @@ import Gallery from "../Components/Gallery";
 import Testimonials from "../Components/Testimonials";
 import Footer from "../Components/Footer";
 import ScrollScaleWrapper from "../Components/ScrollScaleWrapper";
-import styles from "../styles/Landing.module.css";
+
 
 const Home: React.FC = () => {
   return (
